@@ -174,7 +174,7 @@ char find_next_letter(char* used) {
 void encrypt(char* plaintext, char square[SIZE][SIZE]) {
     size_t plaintext_length = strlen(plaintext);
     char formatted_input[plaintext_length * 2];
-    size_t output_length = strlen(formatted_input);
+    size_t output_length = plaintext_length * 2;
     char letter1, letter2;
     struct letter_position letter_pos_1, letter_pos_2;
     char output[output_length];
